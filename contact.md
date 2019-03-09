@@ -4,4 +4,4 @@ title: Contact
 permalink: /contact/
 ---
 
-mailto: benmarrow1@gmail.com
+<a href="mailto:benmarrow1@gmail.com">contact me</a>

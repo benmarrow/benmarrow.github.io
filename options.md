@@ -14,9 +14,9 @@ Investors presumably care about
 <br><br>
 ![equation](http://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20V/V%7D%7B%5Cpartial%20S/S%7D%20%3D%20%5Cfrac%7B%5Cpartial%20V%7D%7B%5Cpartial%20S%7D%20%5Cfrac%7BS%7D%7BV%7D)
 
-I assume this latter quantity would be the basic object of interest to any options trader: it quite literally gives the elasticity of option price with respect to security price. But I could find very little about it online. Wikipedia described the object in question as Lambda (with no additional description) and Investopedia had only a short writeup. Nor was the answer intuitive to me. Very in-the-money options have a high delta, but high V. Very out-of-the-money options have a small delta, but are very cheap.
+I assume this latter quantity would be the basic object of interest to any options trader: it quite literally gives the elasticity of option price with respect to security price. But I could find very little about it online. Wikipedia described the object in question as <a href = "http://en.wikipedia.org/wiki/Greeks_(finance)#Lambda">Lambda</a> (with no additional description) and Investopedia had only a <a href = "http://www.investopedia.com/terms/l/lambda.asp">short writeup</a>. Nor was the answer intuitive to me. Very in-the-money options have a high delta, but high V. Very out-of-the-money options have a small delta, but are very cheap.
 
-Black-Scholes, the textbook model of options pricing, gave one answer:
+Black-Scholes, the textbook model of options pricing, gave one answer. Below 
 
 
 

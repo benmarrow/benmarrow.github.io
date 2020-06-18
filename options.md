@@ -9,7 +9,7 @@ The standard objects of interest in options trading are the so-called "greeks", 
 But investors don't care about absolute profits, they care about returns. The delta of an option gives 
 <br><br><center>
 ![equation](http://latex.codecogs.com/gif.latex?%5CDelta%20%3D%5Cfrac%7B%5Cpartial%20V%7D%7B%5Cpartial%20S%7D)
-<\center>
+
 Investors presumably care about
 <br><br>
 ![equation](http://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20V/V%7D%7B%5Cpartial%20S/S%7D%20%3D%20%5Cfrac%7B%5Cpartial%20V%7D%7B%5Cpartial%20S%7D%20%5Cfrac%7BS%7D%7BV%7D)
@@ -17,6 +17,7 @@ Investors presumably care about
 I assume this latter quantity would be the basic object of interest to any options trader: it quite literally gives the elasticity of option price with respect to security price. But I could find very little about it online. Wikipedia described the object in question as Lambda (with no additional description) and Investopedia had only a short writeup. Nor was the answer intuitive to me. Very in-the-money options have a high delta, but high V. Very out-of-the-money options have a small delta, but are very cheap.
 
 Black-Scholes, the textbook model of options pricing, gave one answer:
+
 
 
 

@@ -1,8 +1,10 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+layout: page
+title: About
+permalink: /about/
 ---
 
-test
+I am a PhD student in the <a href = "http://financialeconomics.uchicago.edu">Joint Program in Finance & Economics</a> between the University of Chicago and the Booth School of Business.
+
+
+Previously, I worked as a Senior Research Analyst in the Capital Markets Group of the Federal Reserve Bank of New York. I received my BA from Yale in 2017 in Ethics, Politics, & Economics.

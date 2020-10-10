@@ -5,7 +5,7 @@ permalink: /blog/
 ---
 
 <p style="text-align:left;">
-    <b>S&P500 Concentration</b>
+    <b><a href = "https://benmarrow.com/blogposts/SP500_Concentration.html" style="color: #000000; text-decoration: underline;">S&P500 Concentration</a></b>
     <span style="float:right;">
         October 7, 2020
     </span>
@@ -14,7 +14,7 @@ permalink: /blog/
 * <a href="https://benmarrow.com/pdfs/SP500_Concentration.pdf">PDF</a>
 
 <p style="text-align:left;">
-    <b><a href="https://benmarrow.com/sp500.html" style="color: #fb3f00; text-decoration: underline;">A Question About Options Trading</a></b>
+    <b><a href="https://benmarrow.com/blogposts/A_Question_About_Options_Trading.html" style="color: #000000; text-decoration: underline;">A Question About Options Trading</a></b>
     <span style="float:right;">
         June 19, 2020
     </span>

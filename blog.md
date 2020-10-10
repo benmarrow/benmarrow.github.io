@@ -14,10 +14,11 @@ permalink: /blog/
 * <a href="https://benmarrow.com/pdfs/SP500_Concentration.pdf">PDF</a>
 
 <p style="text-align:left;">
-    <b><a href="https://benmarrow.com/sp500.html">A Question About Options Trading</a></b>
+    <b><a href="https://benmarrow.com/sp500.html" style="color: #fb3f00; text-decoration: underline;">A Question About Options Trading</a></b>
     <span style="float:right;">
         June 19, 2020
     </span>
 </p>
 * <a href = "https://www.notion.so/A-Question-about-Options-Trading-9e4f4f9f6075451dada5ba95e4cd5ea1">Notebook</a>
 * <a href ="https://benmarrow.com/pdfs/A_Question_About_Options_Trading.pdf">PDF</a>
+

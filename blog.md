@@ -4,10 +4,13 @@ title: Blog
 permalink: /blog/
 ---
 
-
-October 7, 2020
+<p style="text-align:left;">
+    **S&P500 Concentration**
+    <span style="float:right;">
+        October 7, 2020
+    </span>
+</p>
 <br>
-**October 7 2020** - S&P500 Concentration
 A note on increasing concentration in the S&P500
 * <a href="https://www.notion.so/S-P500-Concentration-90df7a9eafd842ad924b4ace3675fdb9">Notebook</a>
 * <a href="https://benmarrow.com/pdfs/SP500_Concentration.pdf">PDF</a>

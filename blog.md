@@ -19,6 +19,6 @@ permalink: /blog/
         June 19, 2020
     </span>
 </p>
-* <a href = "https://www.notion.so/A-Question-about-Options-Trading-9e4f4f9f6075451dada5ba95e4cd5ea1">Notebook</a>
+* <a href = "https://www.notion.so/A-Question-About-Options-Trading-9e4f4f9f6075451dada5ba95e4cd5ea1">Notebook</a>
 * <a href ="https://benmarrow.com/pdfs/A_Question_About_Options_Trading.pdf">PDF</a>
 

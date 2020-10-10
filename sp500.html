@@ -1,0 +1,638 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>S&amp;P500 Concentration</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="90df7a9e-afd8-42ad-924b-4ace3675fdb9" class="page serif"><header><div class="page-header-icon undefined"><span class="icon">📈</span></div><h1 class="page-title">S&amp;P500 Concentration</h1></header><div class="page-body"><p id="bf3a0142-b47d-4575-80f0-57a709567a9a" class=""><span class="user">@Ben Marrow</span></p><p id="79c766d9-d94c-4990-981c-083a17814689" class="">October 7, 2020</p><p id="5284480b-d0e5-40e9-9e73-2112638f6290" class="">The sweeping changes in the economy and market in the aftermath of Covid-19 have <a href="https://www.morningstar.com/articles/992504/the-sp-500-grows-ever-more-concentrated">reawakened</a> <a href="https://markets.businessinsider.com/news/stocks/sp500-concentration-large-cap-bad-sign-future-returns-effect-market-2020-4-1029133505">fears</a> <a href="https://www.forbes.com/sites/sergeiklebnikov/2020/07/24/apple-microsoft-amazon-google-and-facebook-make-up-a-record-chunk-of-the-sp-500-heres-why-that-might-be-dangerous/">regarding</a> <a href="https://www.startribune.com/the-s-p-500-has-never-been-more-top-heavy/572106152/">stock</a> <a href="https://www.barrons.com/articles/the-stock-market-is-most-concentrated-since-the-2000-tech-bubble-goldman-says-51588005659">market</a> <a href="https://www.nytimes.com/2020/07/23/business/analysts-worry-about-the-top-heavy-stock-market.html">concentration</a>. These worries are motivated in part by the large divergence in returns between the smallest and largest companies in broad-based market portfolios like the S&amp;P500. Since January 2020, an investor holding an equal-weighted basket of the largest 10 companies in the S&amp;P500 would have realized a return of 11.4%, while an investor holding a basket of the smallest 100 companies would have <em>lost</em> 20.3% of his portfolio. Nor does one need to look at portfolio returns to realize the outsized role that many of the S&amp;P&#x27;s largest companies — Amazon, Google, and Microsoft, to name a few — have taken during the crisis.</p><p id="5e400b72-2ac1-48b3-b88f-a7432489c7e8" class="">
+</p><p id="84f53647-77bf-4a97-812a-49d59d420b58" class="">In this post I offer three comments on why these recent changes may give an incomplete picture of market concentration. First, a variety of measures show that stock market concentration in absolute terms is still beneath its historical levels, including relative to periods as recent as the early 2000&#x27;s. Second, we should be careful to distinguish <em>stock</em> <em>market</em> concentration from more salient antitrust concerns regarding <em>industry</em> concentration. Finally, recent changes may speak more to sectoral effects (the rise of the technology sector) than to across-the-board increases in concentration.</p><p id="791e13d1-bfb9-44b6-a53b-ed6ad381152d" class="">
+</p><p id="e084028d-f330-4ec9-8434-d1d7819c673f" class=""><strong>A Longer Time Series</strong></p><p id="70159a08-33f3-4d6f-aa35-d9a3644144aa" class="">Proponents of the short-term concentration thesis tend to focus on the recent increases in stock term concentration. Empirically, these analyses reveal a striking increase in concentration in 2020 alone, as seen by the market share of the five largest companies.</p><figure id="84238638-2a59-48c2-a6f6-8a2ad75f54d1" class="image"><a href="S&amp;P500%20Concentration%20842386382a5948c2a6f68a2ad75f54d1/top5_2020.png"><img style="width:480px" src="S&amp;P500%20Concentration%20842386382a5948c2a6f68a2ad75f54d1/top5_2020.png"/></a><figcaption>Figure 1: The Rise of the Top 5, 2010-2020</figcaption></figure><p id="1b29c56a-876b-49b5-ace2-144390ad4c2b" class="">
+</p><p id="c538b244-9855-408d-8c23-feadcd26cdf7" class="">However, short term increases in stock market concentration mask longer term trends dating back to the 1960&#x27;s. Consider the full time series of S&amp;P500 returns since 1960, when the index first comprised 500 companies. Figure 2 plots four alternate measures of concentration: (1) HHI, (2) Top 5 share, (3) Gini Coefficient, and (4) the number of companies from the bottom of the S&amp;P500 size distribution whose combined market share is equal to that of the largest 5.</p><p id="0f898500-2c90-4a6a-80ad-00ed53a25283" class="">The Herfindahl-Hirschman Index (HHI) gives the sum of squared market shares. Though it is typically used in an antitrust context to capture shares of total revenue in an industry, here we use it to measure shares of the total index market capitalization.  Like the Top 5 share, it is primarily driven by the size of the largest players in a given market rather than variation in the bottom half of the distribution. Meanwhile, the Gini-Coefficient — like the bottom # equivalent of top 5 — is more sensitive to the shares in the lower tails.</p><figure id="9b6ef2b1-a7d9-4655-9b39-127676b68329" class="image"><a href="S&amp;P500%20Concentration%20842386382a5948c2a6f68a2ad75f54d1/concentration_oct07.png"><img style="width:576px" src="S&amp;P500%20Concentration%20842386382a5948c2a6f68a2ad75f54d1/concentration_oct07.png"/></a><figcaption>Figure 2: S&amp;P500 Concentration in the Long Run</figcaption></figure><p id="6432b823-a04b-4442-9360-28542ac9d615" class="">
+</p><p id="3098d277-71f2-4bad-bbb4-2e366837607b" class="">By any of these four measures, concentration in S&amp;P500 was substantially larger in the 1960&#x27;s than it was today. Indeed, current levels of stock market concentration are roughly on par with those in the early 2000&#x27;s. This is not to say that there were healthy levels of concentration in those periods, but rather the current levels of concentration are hardly unprecedented.</p><p id="ce4e2c89-8453-43c5-92a9-b0c7eac55957" class="">
+</p><p id="5ddc4d42-2718-46b9-abf6-f7fde3dfdede" class=""><strong>Industry Concentration</strong></p><p id="28c4d1c2-08fa-472a-9cc5-3f4e3fdb3b29" class="">Fears of concentration typically approach the issue from a consumer-welfare standpoint. That is, they generally associate concentration with anticompetitive practices and attendant harms to consumers (higher markups, restricted product choice, reduced incentives for innovation, etc.). However, stock market concentration by itself tells us little about the structure of competition at the industry or sector level. For one, the stock market is not an industry in the sense of offering a single product or products. Nor does it represent the universe of companies that market to consumers. Companies ranging from IKEA and Cargill to Deloitte and Staples are just several examples of non-public companies whose relative performance is not captured by measures of stock market concentration.</p><p id="4d4374ad-c350-4f09-b4c0-f2e867448b7a" class="">To the extent that fears of stock market concentration are fears of anticompetitive practices, it would be useful to cite data on those practices directly (which may well have seen a commensurate increase!). Much research in recent years has focused estimating markups from the data, not to mention the vast law and economics literature on anticompetitive standards. One <a href="https://research.chicagobooth.edu/-/media/research/stigler/pdfs/workingpapers/17isaggregatemarketpowerincreasing.pdf">paper</a> by James Traina, for example, argues that markups have only moderately increased (though the data, illustrated below, ends before 2020).</p><figure id="e7c07b86-9136-45b9-89ed-10e8855f3a3e" class="image"><a href="S&amp;P500%20Concentration%20842386382a5948c2a6f68a2ad75f54d1/Screen_Shot_2020-10-07_at_6.43.46_PM.png"><img style="width:384px" src="S&amp;P500%20Concentration%20842386382a5948c2a6f68a2ad75f54d1/Screen_Shot_2020-10-07_at_6.43.46_PM.png"/></a><figcaption>Figure 3: Aggregate Market Power (from Traina (2018)).</figcaption></figure><p id="aa6e7533-653d-4359-be5c-088607f4b16a" class="">Further data showing more recent changes in markups or various industry-level concentration ratios would be helpful. Below I a plot a very rough proxy of concentration, namely, annual average of revenue-weighted HHI across SIC industry classifiers through the end of 2019.  The trend shows an increase in concentration, predating COVID.</p><figure id="911ec2bf-ac6c-4999-abdc-5ebe4e11ad8d" class="image"><a href="S&amp;P500%20Concentration%20842386382a5948c2a6f68a2ad75f54d1/hhi.png"><img style="width:432px" src="S&amp;P500%20Concentration%20842386382a5948c2a6f68a2ad75f54d1/hhi.png"/></a><figcaption>Figure 4: Annual Average Revenue-Weighted HHI Across SICs</figcaption></figure><p id="894e2758-4317-4e1e-8884-442a79f5f397" class="">
+</p><p id="dfbb1123-3238-4d5b-be21-87ce8b8a39d7" class=""><strong>Tech vs. the Rest</strong></p><p id="9293d464-fa91-4aec-b346-f44374c16dab" class="">Several analysts have <a href="https://nathantankus.substack.com/p/the-stock-market-is-less-disconnected">pointed out</a> the technology-driven character of the 2020 stock-market. Tech stocks (FAANG stocks chief among them) have well outperformed the broader market this year, in part due to their resilience to the COVID-induced spending habits. But in this sense, increases in stock market concentration may simply reflect sectoral changes in the composition of the broader economy rather than within-industry, or widespread, increases in concentration.</p><p id="e1a1d89b-ed76-4cb3-92ef-85975e6ada31" class="">Consider the sectoral makeup of the largest companies at the beginning of each decade in the past half century:</p><figure id="9e16b221-e3a5-4b1e-902e-3b08285dde13" class="image"><a href="S&amp;P500%20Concentration%20842386382a5948c2a6f68a2ad75f54d1/Screen_Shot_2020-10-08_at_2.44.05_PM.png"><img style="width:1788px" src="S&amp;P500%20Concentration%20842386382a5948c2a6f68a2ad75f54d1/Screen_Shot_2020-10-08_at_2.44.05_PM.png"/></a><figcaption>Figure 5: Largest 10 Companies by Market Cap., 1960-2020.</figcaption></figure><p id="6db94a7b-cda4-4e56-bd77-f84b8313334b" class="">In previous decades, the largest 5 companies represented a more heterogeneous mix of industries, including oil (Exxon, BP), electronics (Eastman Kodak, General Electric), and other non-tech sectors (General Motors, Dupont, Altria, etc). By contrast, as of August 2020, all 5 of the largest companies were tech companies. The post-2010 increase of the top 5 share is thus primarily driven by a basket of 5 competitors in a single industry, rather than representative increases in concentration across industries. To be sure, the rise of tech sector is important, but the story of the largest 5 companies alone tells us very little about relative changes in shares in other industries. <a href="https://truthonthemarket.com/2019/05/07/is-amazon-guilty-of-predatory-pricing">Some</a> <a href="https://medium.com/@progressivepolicyinstitute/amazon-antitrust-and-private-label-goods-bf8b8cc00e99">argue</a>, for example, that the peculiarities of the tech industry lead to underpricing and increased choice as concentration increases. For others, the similar profile of the largest companies leaves even <em>more</em> reason to worry, as the stock market becomes more vulnerable to sector-specific shocks.</p><p id="a8df12c1-8f54-4e59-9cf3-1877c9430251" class="">
+</p><p id="56d3b7c0-c08e-4b79-8700-cb05641d434e" class="">
+</p><p id="64190d67-58a8-4734-b026-ff59694d19ff" class="">
+</p><p id="bbcd26f5-9b1e-4183-bc18-7a1009960fa7" class="">
+</p><p id="0220ca3e-5f84-406c-926b-6850285ffe83" class="">
+</p></div></article></body></html>

@@ -4,6 +4,16 @@ title: Blog
 permalink: /blog/
 ---
 
+
+<p style="text-align:left;">
+    <a href = "https://benmarrow.com/blogposts/Twitter_Graphs.html" style="color: #000000; text-decoration: underline;">My Twitter Graphs</a>
+    <span style="float:right;">
+        (Ongoing)
+    </span>
+</p>
+* <a href="https://www.notion.so/My-Twitter-Graphs-08dfb12dc33141b0b38043653db8bce9">Notebook</a>
+
+
 <p style="text-align:left;">
     <a href = "https://benmarrow.com/blogposts/SP500_Concentration.html" style="color: #000000; text-decoration: underline;">S&P500 Concentration</a>
     <span style="float:right;">

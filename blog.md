@@ -6,6 +6,15 @@ permalink: /blog/
 
 
 <p style="text-align:left;">
+    <a href = "https://benmarrow.com/blogposts/Hits_Contacts_Baseball.html" style="color: #000000; text-decoration: underline;">Hits and Contacts in Baseball</a>
+    <span style="float:right;">
+        December 18, 2020
+    </span>
+</p>
+* <a href="https://www.notion.so/Hits-vs-Contacts-in-Baseball-f871b9e4e40b4f02bc9bcf310d901b58">Notebook</a>
+
+
+<p style="text-align:left;">
     <a href = "https://benmarrow.com/blogposts/Predictability_Sabermetrics.html" style="color: #000000; text-decoration: underline;">Predictability in Sabermetrics</a>
     <span style="float:right;">
         December 14, 2020

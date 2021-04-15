@@ -5,7 +5,7 @@ permalink: /blog/
 ---
 
 <p style="text-align:left;">
-    <a href = "https://benmarrow.com/blogposts/Sports-Promotions.html" style="color: #000000; text-decoration: underline;">Sports Promotions</a>
+    <a href = "https://benmarrow.com/blogposts/Sports_Promotions.html" style="color: #000000; text-decoration: underline;">Sports Promotions</a>
     <span style="float:right;">
         April 15, 2021
     </span>

@@ -1,0 +1,637 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Sports Promotions</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="a8427c86-6bbb-4ee3-9645-040f09aef198" class="page sans"><header><h1 class="page-title">Sports Promotions</h1></header><div class="page-body"><p id="321c2769-d698-494a-b48f-e3368dc401bd" class=""><span class="user">@Ben Marrow</span> </p><p id="7bc67d34-ef6f-467b-a637-cb53ce8eac72" class="">
+</p><p id="2919395a-26d0-45be-83bc-f0c9f7719b43" class="">A friend recently alerted me to this promotion: </p><p id="4b5df3f7-0a16-4bd2-838c-7a3af065789c" class="">
+</p><figure id="f39c691e-c5ad-4908-9d6b-174405c73bb8" class="image"><a href="Sports%20Promotions%20f39c691ec5ad49089d6b174405c73bb8/Screen_Shot_2021-04-14_at_8.49.50_PM.png"><img style="width:692px" src="Sports%20Promotions%20f39c691ec5ad49089d6b174405c73bb8/Screen_Shot_2021-04-14_at_8.49.50_PM.png"/></a></figure><p id="93a8df8b-ecae-445e-9885-dda29c40cb95" class="">Is this a profitable venture? Probably. No hitters are pretty rare — only 306 in total since 1876, 251 since 1901, and none for the Red Sox since 2008. It doesn&#x27;t help that the Red Sox are pitching <a href="https://www.mlb.com/stats/team/pitching/whip?sortState=asc">worse than average</a> this season in WHIP and ERA</p><figure id="adecef4d-14d6-43eb-a2ba-a9959e07ca1a" class="image"><a href="Sports%20Promotions%20f39c691ec5ad49089d6b174405c73bb8/Screen_Shot_2021-04-14_at_10.23.32_PM.png"><img style="width:531px" src="Sports%20Promotions%20f39c691ec5ad49089d6b174405c73bb8/Screen_Shot_2021-04-14_at_10.23.32_PM.png"/></a></figure><p id="7e4970a6-a955-446b-baaf-0febfd6d1901" class="">
+</p><p id="1daf8c2e-2f44-4af4-8349-52602a298cb5" class="">More specifically, let&#x27;s say there&#x27;s a <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">p\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.94444em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span><span class="mord">%</span></span></span></span></span><span>﻿</span></span> chance that a no-hitter is thrown and that Jordan&#x27;s has gross margin of <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span></span></span><span>﻿</span></span>. Then, if the promotion increases sales by <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">X\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.80556em;vertical-align:-0.05556em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mord">%</span></span></span></span></span><span>﻿</span></span>, the promotion is profitable if and only if</p><figure id="4bd7ad07-5945-4b9f-a73b-13afa3b35254" class="equation"><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css')</style><div class="equation-container"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mi>p</mi><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><mi>X</mi><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo><mi>X</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">-p(1-\alpha)X+(1-p)(\alpha)X&gt;0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">−</span><span class="mord mathdefault">p</span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="mclose">)</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">p</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="mclose">)</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></span></div></figure><p id="c315817c-6df6-420e-944a-5bfc058100e5" class="">The first term gives the costs to Jordan&#x27;s if a no-hitter is pitched, reflecting the fact that Jordan&#x27;s only incurs the cost-of-goods-sold and <em>not</em> the sale price. The second term reflects the gross profits to Jordan&#x27;s if a no-hitter is pitched, in which case Jordan realizes its full gross margin per dollar.</p><p id="ab9c4163-8ffc-46de-9653-c0f29ff3fe04" class="">
+</p><p id="d0426020-7c84-404f-80da-33d0bba1a46e" class="">If this year&#x27;s Red Sox reflect the average pitching ability of the MLB, then a generous guess for <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span></span></span></span></span><span>﻿</span></span> is 1%. (The unconditional probability of a no-hitter is 0.12%; the average percent of no-hitters per season is 0.15%). Since Jordan&#x27;s isn&#x27;t publicly traded, we can&#x27;t observe its margins, but let&#x27;s assume it had the same gross margins as Wayfair did in 2020, roughly 29%. Then the multiplier from the promotion is:<div class="indented"><figure id="661de98e-12ce-4c19-9e53-4559b6d30ff9" class="equation"><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css')</style><div class="equation-container"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mo stretchy="false">(</mo><mn>0.01</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mn>0.29</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mn>0.01</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>0.29</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.28</mn></mrow><annotation encoding="application/x-tex">-(0.01)(1-0.29)+(1-0.01)(0.29)=0.28</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">−</span><span class="mopen">(</span><span class="mord">0</span><span class="mord">.</span><span class="mord">0</span><span class="mord">1</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">2</span><span class="mord">9</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">0</span><span class="mord">1</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord">0</span><span class="mord">.</span><span class="mord">2</span><span class="mord">9</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">2</span><span class="mord">8</span></span></span></span></span></div></figure></div></p><p id="94721649-af6b-40e4-a03b-d73955e21ac3" class="">So for every <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span></span></span></span></span><span>﻿</span></span>% increase in sales, expected net income goes up <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.28</mn><mo>⋅</mo><mi>X</mi><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">0.28\cdot X\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">2</span><span class="mord">8</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.80556em;vertical-align:-0.05556em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mord">%</span></span></span></span></span><span>﻿</span></span>. (Intuitively, this basically says that Jordan&#x27;s earns its gross margin with near certainty). Jordan&#x27;s had 279.4M in revenue last year, so a 1% increase in sales due to this promotion could plausibly net the company (in expectation) +$780,000. Even if the probability of a no-hitter jumped to 10%, the expected net income would be +$530,000.</p><p id="1e1326b2-fcf7-4e70-9e6f-fceb55cd34de" class="">
+</p><p id="be5f6758-c781-4884-bc02-c43ef980923a" class="">In fact, in this simplified model, the promotion is profitable <em>as long as the gross margin exceeds the probability of no-hitter. </em>So under the Wayfair margin assumption, the probability of a no-hitter would have to jump to 29% to make the offer unprofitable. Alternatively, Jordan&#x27;s could expect to breakeven just by promising the full rebate if <a href="https://www.baseball-reference.com/players/v/verdual01.shtml">Alex Verdugo</a> (career BA = 0.285) gets a hit on any given at-bat.</p><p id="a6919ec7-1865-4d89-a629-d8fe3396c8d6" class="">
+</p><h2 id="5ac517f4-339b-4825-a59b-ee02736da263" class="">Free Chick-Fil-A</h2><p id="69bcbb3e-2c98-4024-bcd0-b9ca7372db5a" class="">Speaking of sports-contingent freebies, I&#x27;m reminded of a stadium promotion that the Houston Rockets once did (and perhaps still do?) in partnership with Chick-Fil-A.</p><blockquote id="75ddb334-2cb1-403a-95f7-6b48a69afbeb" class="">If an opposing player “misses two consecutive &#x27;fowl&#x27; shots” during the 4th quarter of a Rockets home game, fans at Toyota Center can redeem their tickets for a free Classic Chicken Sandwich. </blockquote><p id="28e01b1f-93f6-4316-b826-4f66076f6303" class="">(To clarify, the misses have to be consecutive within the same play).</p><p id="6ab0f523-b722-4a3b-b6be-c96a922cfa41" class="">
+</p><p id="baeecb65-4d49-4ec5-8844-778863653569" class="">Fortunately, in the one Rockets game I attended on December 31, 2019, Mason Plumlee <a href="https://www.espn.com/nba/playbyplay/_/gameId/401161143">missed</a> his two free throws at the beginning of the fourth quarter, covering my first lunch of the new year. It also made me wonder how frequently this promotion paid out.</p><p id="31688d87-8e4e-48ed-9c90-a8c29b864db1" class="">
+</p><p id="a3dd4d3c-6167-4d41-a511-6c2706bd0c95" class="">Scraping play-by-play free throw data takes a long time to do, so I&#x27;m only going to present the results from the 2018-2019 season. In that season, there were 55,952 free throw attempts, 76.6% of which were successful:</p><p id="320b714c-9dfd-4832-ba7d-da7f0b1a9c86" class="">
+</p><figure id="28a5efbc-6118-4072-a342-ae5ba43ca1ab" class="image"><a href="Sports%20Promotions%20f39c691ec5ad49089d6b174405c73bb8/Screen_Shot_2021-04-15_at_3.11.04_PM.png"><img style="width:528px" src="Sports%20Promotions%20f39c691ec5ad49089d6b174405c73bb8/Screen_Shot_2021-04-15_at_3.11.04_PM.png"/></a></figure><p id="c6b4563c-4335-4010-80c8-c03e1715b266" class="">If <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>0.766</mn></mrow><annotation encoding="application/x-tex">p=0.766</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">7</span><span class="mord">6</span><span class="mord">6</span></span></span></span></span><span>﻿</span></span> is our binomial sufficient statistic, then what&#x27;s the probability that 2 in a row are missed? On 2-point free throw attempts, its obviously <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mn>0.766</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>=</mo><mn>5.4</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">(1-0.766)^2=5.4\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">7</span><span class="mord">6</span><span class="mord">6</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.80556em;vertical-align:-0.05556em;"></span><span class="mord">5</span><span class="mord">.</span><span class="mord">4</span><span class="mord">%</span></span></span></span></span><span>﻿</span></span>. On <em>3</em>-point free throw attempts, missing 2 consecutive free throws can occur in three ways <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>0</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>0</mn><mo stretchy="false">)</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{(0,0,1),(1,0,0),(0,0,0)\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mopen">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mclose">)</span><span class="mclose">}</span></span></span></span></span><span>﻿</span></span>, so the probability is <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mn>0.766</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo stretchy="false">(</mo><mn>0.766</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mn>0.766</mn><msup><mo stretchy="false">)</mo><mn>3</mn></msup><mo>=</mo><mn>9.67</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">2(1-0.766)^2(0.766)+(1-0.766)^3=9.67\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">7</span><span class="mord">6</span><span class="mord">6</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">0</span><span class="mord">.</span><span class="mord">7</span><span class="mord">6</span><span class="mord">6</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">7</span><span class="mord">6</span><span class="mord">6</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.80556em;vertical-align:-0.05556em;"></span><span class="mord">9</span><span class="mord">.</span><span class="mord">6</span><span class="mord">7</span><span class="mord">%</span></span></span></span></span><span>﻿</span></span>. Since 2-point free throw attempts are 24 times more frequent that 3-point free throw attempts, our estimated probability on any given attempt is</p><figure id="41e64acc-154f-41c7-a525-1ee985d669fc" class="equation"><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css')</style><div class="equation-container"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.96</mn><mo stretchy="false">(</mo><mn>0.054</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mn>0.96</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>0.0967</mn><mo stretchy="false">)</mo><mo>=</mo><mn>5.57</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">0.96(0.054)+(1-0.96)(0.0967)=5.57\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">9</span><span class="mord">6</span><span class="mopen">(</span><span class="mord">0</span><span class="mord">.</span><span class="mord">0</span><span class="mord">5</span><span class="mord">4</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">9</span><span class="mord">6</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord">0</span><span class="mord">.</span><span class="mord">0</span><span class="mord">9</span><span class="mord">6</span><span class="mord">7</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.80556em;vertical-align:-0.05556em;"></span><span class="mord">5</span><span class="mord">.</span><span class="mord">5</span><span class="mord">7</span><span class="mord">%</span></span></span></span></span></div></figure><p id="686a2158-0182-4716-ad59-59695e8b70e7" class="">Of course, there are obvious adjustments one may make for differences in fourth quarter fouls, away team shooting, streak-contingent accuracy, etc. The effects of these are not always obvious. For example, we usually think of away teams as playing with a disadvantage, but if anything, the away team seems <em>less </em>likely to miss on two-point free throws.</p><figure id="06e5f167-b05d-4cea-aa51-5b133f21e43a" class="image"><a href="Sports%20Promotions%20f39c691ec5ad49089d6b174405c73bb8/Screen_Shot_2021-04-15_at_3.09.48_PM.png"><img style="width:528px" src="Sports%20Promotions%20f39c691ec5ad49089d6b174405c73bb8/Screen_Shot_2021-04-15_at_3.09.48_PM.png"/></a></figure><p id="ad376808-020b-4f34-9380-07536b21c3a2" class="">Not surprisingly, the fourth quarter typically has more 2 and 3 point free throw attempts than any of the other quarters. The typical fourth quarter in 2018-2019 saw 5.77 free-throw plays, of which 3.16 went to the away team. Using the numbers above, that gives an <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≈</mo></mrow><annotation encoding="application/x-tex">\approx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.48312em;vertical-align:0em;"></span><span class="mrel">≈</span></span></span></span></span><span>﻿</span></span>16% chance that any given game has the opposing team miss two free throws in a row in the fourth quarter.</p><p id="b1cea54c-c2e3-44c1-a5d6-6a794894726a" class="">
+</p><p id="ffef8d09-4a8e-453a-9f9e-dfbea249f39d" class="">And this is basically what we observe. Among eligible plays, (2 or 3 point free throws in the fourth quarter by the away team), a consecutive miss was observed in 6.2% of plays. Unconditionally, an opposing player missed two free throws in the fourth quarter in an astonishing 19.1% of games! Maybe Chick-fil-a wasn&#x27;t so smart to offer this promotion after all.</p></div></article></body></html>

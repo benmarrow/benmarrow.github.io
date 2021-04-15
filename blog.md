@@ -4,6 +4,14 @@ title: Blog
 permalink: /blog/
 ---
 
+<p style="text-align:left;">
+    <a href = "https://benmarrow.com/blogposts/Sports-Promotions.html" style="color: #000000; text-decoration: underline;">Sports Promotions</a>
+    <span style="float:right;">
+        April 15, 2021
+    </span>
+</p>
+* <a href="https://www.notion.so/Sports-Promotions-a8427c866bbb4ee39645040f09aef198">Notebook</a>
+
 
 <p style="text-align:left;">
     <a href = "https://benmarrow.com/blogposts/Hits_Contacts_Baseball.html" style="color: #000000; text-decoration: underline;">Hits and Contacts in Baseball</a>

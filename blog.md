@@ -4,6 +4,16 @@ title: Blog
 permalink: /blog/
 ---
 
+
+<p style="text-align:left;">
+    <a href = "https://benmarrow.com/blogposts/Scrabble_Portfolios.html" style="color: #000000; text-decoration: underline;">Scrabble-Weighted Portfolios</a>
+    <span style="float:right;">
+        October 3, 2021
+    </span>
+</p>
+* <a href="https://www.notion.so/Scrabble-Weighted-Portfolios-79435f9c2c9e4db1b8286e2799d231ed">Notebook</a>
+
+
 <p style="text-align:left;">
     <a href = "https://benmarrow.com/blogposts/Sports_Promotions.html" style="color: #000000; text-decoration: underline;">Sports Promotions</a>
     <span style="float:right;">

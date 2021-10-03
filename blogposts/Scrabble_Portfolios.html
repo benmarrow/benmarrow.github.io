@@ -1,0 +1,649 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Scrabble-Weighted Portfolios</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="79435f9c-2c9e-4db1-b828-6e2799d231ed" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🔠</span></div><h1 class="page-title">Scrabble-Weighted Portfolios</h1></header><div class="page-body"><p id="9afea445-f17a-45ff-8ea0-2b6bea0795e9" class=""><span class="user">@Ben Marrow</span> </p><p id="5e90bace-c64c-4b1e-81fc-465d7693cae8" class=""><time>@October 1, 2021</time> </p><p id="954188bb-725a-4040-97a8-a61ebac29c01" class="">In a world with <a href="https://www.npr.org/2021/09/25/1040683057/crypto-trading-hamster-goxx-warren-buffet-s-p-500">crypto-trading hamsters</a>, <a href="https://www.forbes.com/sites/frederickallen/2013/01/15/cat-beats-professionals-at-stock-picking/?sh=7002ba01621a">stock-trading cats</a>, and all manner of arbitrary stock-selecting mechanisms, perhaps it&#x27;s not so surprising that someone has looked at the use of board games to inform portfolio decisions.</p><p id="56f89d24-fbda-4435-9f19-eed1ca42677f" class="">At least that&#x27;s one takeaway from a <a href="https://www.bayes.city.ac.uk/__data/assets/pdf_file/0005/323087/NM.pdf">presentation</a> by Cass Business School&#x27;s Nick Motson, who found that a &quot;Scrabbled-weighted portfolio&quot; — one in which stocks are held in proportion to their tickers&#x27; corresponding tile values — outperforms the market over a long horizon.  The presentation yields eye-popping figures showing 1.5% higher returns to the Scrabble Index over the market-cap weighted benchmark:</p><p id="1f95fa13-5a49-43d8-bfd7-c206aa6b5cef" class="">
+</p><figure id="3c971e98-d700-459a-8d7b-844d540257db" class="image"><a href="Scrabble-Weighted%20Portfolios%203c971e98d700459a8d7b844d540257db/Screen_Shot_2021-10-01_at_1.08.55_PM.png"><img style="width:528px" src="Scrabble-Weighted%20Portfolios%203c971e98d700459a8d7b844d540257db/Screen_Shot_2021-10-01_at_1.08.55_PM.png"/></a></figure><p id="e195ee00-e933-43ee-8b00-8dc18ae52996" class="">
+</p><p id="91a9a39e-a0a4-4f95-8c9e-8ce743ec261a" class="">Of course, the broader point of his presentation is <em>not</em> that investors should go long the Scrabble Index, but rather that in the space of possible portfolio weights, there are bound to be portfolios that ex post dominate the market portfolio (the implication being that one should be skeptical of &quot;smart beta&quot; strategies that purport to deliver higher sharpe ratios).</p><p id="933f7153-4b2d-4626-a371-fae07f16ce40" class="">
+</p><p id="23d787ee-7b2d-4eeb-a523-d00e3c8e50d9" class="">As a former competitive scrabble player turned finance PhD student, I couldn&#x27;t help but dig deeper into the implications of a Scrabble-weighted portfolio. As a first pass, it is worth replicating the figure from Motson&#x27;s presentation to check that the overall methodology is correct. Although I obtain slightly different numbers, the Scrabble Index does indeed<em> </em>outperform the market-cap weighted index from 1969-2014, with annualized returns of 12.1% vs 10.3% for the value-weighted portfolio.</p><p id="5bf137bc-d05c-4145-a999-fc4ad490fbad" class="">
+</p><figure id="005bd151-c755-4cd5-8b5e-d366a0023bdd" class="image"><a href="Scrabble-Weighted%20Portfolios%203c971e98d700459a8d7b844d540257db/scrabble_port.png"><img style="width:528px" src="Scrabble-Weighted%20Portfolios%203c971e98d700459a8d7b844d540257db/scrabble_port.png"/></a><figcaption>Portfolios use 500 largest stocks at each month-end with at least 5 years of continuous trading history.</figcaption></figure><p id="6fc2f0b3-a760-4703-b1c5-713ac7fc60c4" class="">
+</p><p id="4735f4df-85f5-4b21-8147-0143e722dc79" class="">It also achieves a higher Sharpe ratio of 0.132 vs. 0.114.</p><p id="f666c853-39f7-414b-b7ff-4ec2b2bc37ba" class="">
+</p><p id="e7b179b5-c0ff-45d3-ba95-1fe497ead5a4" class="">One answer for what&#x27;s going on might be that the letters truly do have some meaning. Perhaps, for example, tech or growth companies are more likely to have X, Q, J, and Z in their tickers (think Xerox, Amazon, Zoom, etc.). Or, given the &quot;size factor&quot;, where small stocks have historically outperformed large ones, it could be that tile value is correlated with its ticker&#x27;s market cap.</p><p id="a0086874-e6a4-4710-b29e-2a2d3534eb16" class="">
+</p><p id="27a4099b-686a-42da-9012-45568bb30d3f" class="">None of this is really true. The correlation between ticker value and market cap rank is a mere 6%. The average returns by letter show some heterogeneity, but not one that reveals a clear split by tile value. (The error bars, not shown, are monstrous).</p><p id="e3bb3aa2-818b-4622-8d2e-d272bb084f2b" class="">
+</p><figure id="814206fe-58d2-4111-9004-2de68876a238" class="image"><a href="Scrabble-Weighted%20Portfolios%203c971e98d700459a8d7b844d540257db/letter_vals.png"><img style="width:528px" src="Scrabble-Weighted%20Portfolios%203c971e98d700459a8d7b844d540257db/letter_vals.png"/></a></figure><p id="1744d5b3-b2a5-4227-9661-c96416a87d96" class="">In tile value - return space, the lack of correlation is even more stark:</p><p id="fa9fd457-c53d-449a-8f2d-23903ca22e52" class="">
+</p><figure id="d889eecd-ee82-4af5-a4ec-684b38eb5aa6" class="image"><a href="Scrabble-Weighted%20Portfolios%203c971e98d700459a8d7b844d540257db/letter_vals2.png"><img style="width:528px" src="Scrabble-Weighted%20Portfolios%203c971e98d700459a8d7b844d540257db/letter_vals2.png"/></a></figure><p id="b7d638d1-9f72-4891-86e8-ceaee5607691" class="">What&#x27;s likely going on is exactly the opposite: if tile values have <em>zero</em> correlation with stock-related fundamentals, then weighting by tile value is similar to attaching roughly equal weight to each stock. In that case, the returns on the Scrabble portfolio would mirror the returns on the <em>equal</em>-weighted portfolio, which is basically what we see:</p><p id="6c3c7996-04ee-4705-80f2-44cf3803a7c8" class="">
+</p><figure id="5b3fc3c6-8e86-44b0-a6ca-04f69c622195" class="image"><a href="Scrabble-Weighted%20Portfolios%203c971e98d700459a8d7b844d540257db/scrabble_port2.png"><img style="width:528px" src="Scrabble-Weighted%20Portfolios%203c971e98d700459a8d7b844d540257db/scrabble_port2.png"/></a></figure><p id="3b53e74f-7875-4dd4-a617-73f85f3d893a" class="">
+</p><p id="3e3cc55a-35da-4b48-b512-b57476cd8583" class="">I think the broader lesson here is that the appropriate benchmark for a given set of prospective portfolio weights is <em>not </em>the value-weighted index. The null hypothesis (when weights are &quot;meaningless&quot;) is that stocks are sampled in equal proportion. Creating a portfolio weighted by the frequency of letters in one&#x27;s own name would also likely outperform the value-cap index, but we would agree this isn&#x27;t particularly meaningful.</p><p id="3e1dbfa0-ee60-4078-aa6a-f6573fc7d4c0" class="">
+</p><p id="72498d18-8706-404e-857f-fbfd4ab774e1" class="">In a world where I figure out how to make my code run faster, it would be interesting to see if there is a combination of tile values that delivers reliably higher risk-adjusted returns. I&#x27;m skeptical there is one (in-sample, let alone out-of-sample), but it&#x27;s not impossible. After all, there is a large literature identifying ticker characteristics that seem to matter: <a href="https://www.sciencedirect.com/science/article/pii/S1386418115300483">ease of pronunciation</a>, <a href="https://www.sciencedirect.com/science/article/abs/pii/S1386418115300483">likeability</a>, <a href="https://www.sciencedirect.com/science/article/pii/S1062976907000865">meaning</a>, and <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3394300">linguistic similarity</a> to other companies&#x27; tickers. (Other things, like <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1448119">ticker length</a>, do not matter.)</p><p id="5953c672-fb35-48ae-8908-da1a5cc24c20" class="">
+</p><p id="33a388bc-6ad7-48d5-8644-c19345fba918" class="">In the meantime, let&#x27;s hope Dave Portnoy isn&#x27;t worse off for using Scrabble tiles to select his stocks:</p><figure id="069048f3-bdc8-4b77-8bd2-76dc6d056b2d"><div class="source"><a href="https://twitter.com/TheStalwart/status/1274066978911764488?s=20">https://twitter.com/TheStalwart/status/1274066978911764488?s=20</a></div></figure></div></article></body></html>

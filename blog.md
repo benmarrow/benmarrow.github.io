@@ -7,7 +7,7 @@ permalink: /blog/
 <p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/The-Sharpe-r-Image-60-40-and-Portfolio-Selection-cdd7f58205504ebcad052ffb2b74eece" style="color: #000000; text-decoration: underline;">The Sharpe-r Image: 60/40 and Portfolio Selection</a>
     <span style="float:right;">
-        October 3, 2021
+        October 27, 2021
     </span>
 </p>
 

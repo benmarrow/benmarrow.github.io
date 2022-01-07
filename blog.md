@@ -70,10 +70,5 @@ permalink: /blog/
     </span>
 </p>
 
-<!-- <p style="text-align:left;">
-    <a href = "https://benmarrow.notion.site/The-Chicago-Pedagogy-Reflections-from-Q1-3578522f5e2c48418ed23ca20b2edf77" style="color: #000000; text-decoration: underline;">The Chicago Pedagogy: Reflections from Q1</a>
-    <span style="float:right;">
-        November 27, 2019
-    </span>
-</p>
+
 

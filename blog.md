@@ -5,6 +5,13 @@ permalink: /blog/
 ---
 
 <p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/An-Observation-About-Betas-20a6fc7c31cf453badd599699ba52250" style="color: #000000; text-decoration: underline;">An Observation about Betas</a>
+    <span style="float:right;">
+        January 12, 2022
+    </span>
+</p>
+
+<p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/The-Sharpe-r-Image-60-40-and-Portfolio-Selection-cdd7f58205504ebcad052ffb2b74eece" style="color: #000000; text-decoration: underline;">The Sharpe-r Image: 60/40 and Portfolio Selection</a>
     <span style="float:right;">
         October 27, 2021

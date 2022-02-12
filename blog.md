@@ -5,6 +5,15 @@ permalink: /blog/
 ---
 
 <p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Stock-Returns-and-the-Wisdom-of-Crowds-8ae52de24fc24617ab6cd6a1af14db80" style="color: #000000; text-decoration: underline;">Stock Returns and the Wisdom of Crowds</a>
+    <span style="float:right;">
+        February 12, 2022
+    </span>
+</p>
+
+
+
+<p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/An-Observation-About-Betas-20a6fc7c31cf453badd599699ba52250" style="color: #000000; text-decoration: underline;">An Observation about Betas</a>
     <span style="float:right;">
         January 12, 2022

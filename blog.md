@@ -45,6 +45,15 @@ permalink: /blog/
 <!-- * <a href="https://www.notion.so/Sports-Promotions-a8427c866bbb4ee39645040f09aef198">Notebook</a> -->
 
 
+
+<p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Expected-Values-and-Shooting-Percentages-5085567996a84aa998ba8c4d0560a25b" style="color: #000000; text-decoration: underline;">Expected Values and Shooting Percentages</a>
+    <span style="float:right;">
+        February 18, 2021
+    </span>
+</p>
+
+
 <p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Hits-vs-Contacts-in-Baseball-f871b9e4e40b4f02bc9bcf310d901b58" style="color: #000000; text-decoration: underline;">Hits and Contacts in Baseball</a>
     <span style="float:right;">

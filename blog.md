@@ -5,6 +5,13 @@ permalink: /blog/
 ---
 
 <p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Optimizing-Sports-Bets-1a8c0b37a03846dd8164b055c4a620e5" style="color: #000000; text-decoration: underline;">Optimal Sports Betting</a>
+    <span style="float:right;">
+        March 7, 2022
+    </span>
+</p>
+
+<p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Stock-Returns-and-the-Wisdom-of-Crowds-8ae52de24fc24617ab6cd6a1af14db80" style="color: #000000; text-decoration: underline;">Stock Returns and the Wisdom of Crowds</a>
     <span style="float:right;">
         February 12, 2022

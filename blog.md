@@ -4,7 +4,12 @@ title: Blog
 permalink: /blog/
 ---
 
-<p align="center"><iframe src="https://benmarrow.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe></p>
+### Subscribe
+
+<p align="center"><iframe src="https://benmarrow.substack.com/embed" width="400" height="160" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe></p>
+
+
+### Posts
 
 <p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Optimizing-Sports-Bets-1a8c0b37a03846dd8164b055c4a620e5" style="color: #000000; text-decoration: underline;">Optimal Sports Betting</a>
@@ -12,9 +17,6 @@ permalink: /blog/
         March 7, 2022
     </span>
 </p>
-
-
-### Posts
 
 <p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Stock-Returns-and-the-Wisdom-of-Crowds-8ae52de24fc24617ab6cd6a1af14db80" style="color: #000000; text-decoration: underline;">Stock Returns and the Wisdom of Crowds</a>

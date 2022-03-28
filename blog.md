@@ -6,10 +6,17 @@ permalink: /blog/
 
 ### Subscribe
 
-<p align="center"><iframe src="https://benmarrow.substack.com/embed" width="400" height="160" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe></p>
+<p align="center"><iframe src="https://benmarrow.substack.com/embed" width="400" height="160" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="yes"></iframe></p>
 
 
 ### Posts
+
+<p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Variance-and-Match-Length-in-Tennis-febc18d724394f59a4521c33fd6833b7" style="color: #000000; text-decoration: underline;">Variance and Match Length in Tennis</a>
+    <span style="float:right;">
+        March 27, 2022
+    </span>
+</p>
 
 <p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Optimizing-Sports-Bets-1a8c0b37a03846dd8164b055c4a620e5" style="color: #000000; text-decoration: underline;">Optimal Sports Betting</a>

@@ -7,14 +7,14 @@ permalink: /research/
 
 <p style="text-align:left;">
     <a href = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4154564
-" style="color: #000000; text-decoration: underline;">Revisiting the Stock-Inflation Puzzle
+" style="color: #000000; text-decoration: underline;">Inflation Expectations and Stock Returns
 </a>
     <span style="float:right;">
         July, 2022
     </span> <br>
     (with Manav Chaudhary)
 </p>
-<span style="color:gray; font-size:0.3;">Over the last 60 years, the literature has documented a negative correlation between stock returns and realized inflation. Under the joint hypothesis, the negative correlation implies the puzzling conclusion that stock prices carry a negative inflation insurance premium. We directly measure subjective inflation expectations and use high-frequency identification to show that stock prices carry a robust and stable positive premium. We find that this effect is driven primarily by changes in risk premia, rather than through an interest rate or cashflow channel. Overall, our causal estimates suggest that stocks are a hedge against changes in inflation expectations, and so stocks will hedge realized inflation when it is driven predominantly by changes in expectations. Finally, we revisit the negative correlation between returns and realized inflation documented in the literature. We estimate the correlation has turned positive since 2000, suggesting that stocks have been an inflation hedge in recent decades.</span>
+<span style="color:gray; font-size:0.3;">Do stocks protect against rising inflation expectations? We directly measure investors' expectations using inflation-indexed contracts and show that stocks offer positive returns in response to higher expectations; i.e., that stocks hedge against changes in expectations. Using high-frequency identification around CPI releases, we provide evidence that the positive relationship is causal, and driven primarily by changes in risk premia rather than through an interest rate or cash flow channel.</span>
 
 
 

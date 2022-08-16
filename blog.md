@@ -4,12 +4,23 @@ title: Blog
 permalink: /blog/
 ---
 
+
+
+
 ### Subscribe
 
-<p align="center"><iframe src="https://benmarrow.substack.com/embed" width="400" height="160" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="yes"></iframe></p>
+I also host my blog on my <a href="https://www.benmarrow.substack.com">substack</a> (completely free; used only for distribution).
+<!-- <p align="center"><iframe src="https://benmarrow.substack.com/embed" width="400" height="160" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="yes"></iframe></p> -->
 
 
 ### Posts
+
+<p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Inflation-and-Stock-Returns-0a5e75e89d1842d2bf8d29b38c140e8e" style="color: #000000; text-decoration: underline;">Inflation Expectations and Stock Returns</a>
+    <span style="float:right;">
+        August 16, 2022
+    </span>
+</p>
 
 <p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Variance-and-Match-Length-in-Tennis-febc18d724394f59a4521c33fd6833b7" style="color: #000000; text-decoration: underline;">Variance and Match Length in Tennis</a>

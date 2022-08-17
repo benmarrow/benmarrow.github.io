@@ -6,7 +6,7 @@ permalink: /blog/
 
 
 
-Welcome to my blog. This page contains all my blog posts; however, I also host my blog on my <a href="https://www.benmarrow.substack.com">substack</a> (completely free; used only for distribution).
+Welcome to my blog. This page contains all my blog posts; I also host my blog on my <a href="https://www.benmarrow.substack.com">substack</a> (completely free; used only for distribution).
 <!-- <p align="center"><iframe src="https://benmarrow.substack.com/embed" width="400" height="160" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="yes"></iframe></p> -->
 
 

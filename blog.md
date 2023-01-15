@@ -13,6 +13,14 @@ Welcome to my blog. This page contains all my blog posts; I also host my blog on
 ### Posts
 
 <p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Realized-Returns-Expected-Returns-and-Discount-Rates-80982bc601c841e59fb98729fbbae889" style="color: #000000; text-decoration: underline;">Realized Returns, Expected Returns, and Discount Rates</a>
+    <span style="float:right;">
+        January 14, 2023
+    </span>
+</p>
+
+
+<p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Inflation-and-Stock-Returns-0a5e75e89d1842d2bf8d29b38c140e8e" style="color: #000000; text-decoration: underline;">Inflation Expectations and Stock Returns</a>
     <span style="float:right;">
         August 16, 2022

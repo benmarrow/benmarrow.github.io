@@ -23,7 +23,6 @@ Bank Relationships and the Pricing of Loans
         July, 2022
     </span> 
 </p>
-<br>
 (with <a href = "https://www.brandonzborowski.com/
 " style="color: #000000; text-decoration: underline;">Brandon Zborowski</a>)
 

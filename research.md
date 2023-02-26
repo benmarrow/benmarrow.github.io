@@ -18,7 +18,7 @@ permalink: /research/
 
 
 <p style="text-align:left;">
-<span text-decoration: underline;>Bank Relationships and the Pricing of Loans</span>
+<span style="text-decoration: underline">Bank Relationships and the Pricing of Loans</span>
     <span style="float:right;">
         July, 2022
     </span><br>

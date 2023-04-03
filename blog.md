@@ -13,6 +13,14 @@ Welcome to my blog. This page contains all my blog posts; I also host my blog on
 ### Posts
 
 <p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Measuring-Inequality-95f29c9b799f46d18281d9db87eb3428" style="color: #000000; text-decoration: underline;">Measuring Inequality</a>
+    <span style="float:right;">
+        April 3, 2023
+    </span>
+</p>
+
+
+<p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Realized-Returns-Expected-Returns-and-Discount-Rates-80982bc601c841e59fb98729fbbae889" style="color: #000000; text-decoration: underline;">Realized Returns, Expected Returns, and Discount Rates</a>
     <span style="float:right;">
         January 14, 2023

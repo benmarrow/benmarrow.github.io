@@ -12,6 +12,14 @@ Welcome to my blog. This page contains all my blog posts; I also host my blog on
 
 ### Posts
 
+
+<p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Some-Use-Cases-of-ChatGPT-964660386c5046fbbd7ed7b687acf67f?pvs=4" style="color: #000000; text-decoration: underline;">Some Use-Cases of ChatGPT</a>
+    <span style="float:right;">
+        September 19, 2023
+    </span>
+</p>
+
 <p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Things-I-Learned-August-2023-e09731a6aae94cddafdc1e3b239da6b7?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - August 2023</a>
     <span style="float:right;">

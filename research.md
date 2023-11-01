@@ -14,6 +14,8 @@ permalink: /research/
     </span> <br>
     (with <a href = "https://www.mchaudhary.com/" style = "color: #000080;">Manav Chaudhary</a>)
 </p>
+<span style="text-decoration: italic;">AQR Asset Management Institute Prize</span>
+<span style="text-decoration: italic;">Yiran Fan Memorial Fellowship (Best 3rd Year Paper in Finance)</span>
 <span style="color:gray; font-size:70%;">Do stocks protect against rising inflation expectations? We directly measure investors' expectations using traded inflation-indexed contracts and show that, post-2000, stocks offer positive returns in response to higher expected inflation: unconditionally, a 10 basis point increase in 10-year breakeven inflation is associated with a 1.1% increase in the value-weighted stock index. Using high-frequency identification around scheduled CPI releases, we show this relationship is likely causal. We provide evidence that the price increase is driven by lowering future expected excess returns rather than changing risk-free rates or cashflows: (1) in the cross-section, return responses are almost completely explained by CAPM beta but not by cashflow or leverage related variables, (2) VAR decompositions of returns as well as mediation regressions that directly control for alternate channels attribute nearly all the changes to expected excess returns. Finally, we show inflation expectations predict future output, suggesting that investors may use information about high future inflation as a signal for economic growth, thereby lowering risk premia.</span>
 
 

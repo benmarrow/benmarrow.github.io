@@ -10,3 +10,6 @@ permalink: /misc/
 
 **Notes**
 * <a href="https://benmarrow.com/pdfs/black_scholes.pdf">Notes on Black-Scholes</a>
+
+**Behavioral Finance Reading Group**
+* I am a co-organizer the <a href="https://sites.google.com/view/behavioral-finance-group/">Behavioral Finance Reading Group</a> for Fall 2023

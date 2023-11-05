@@ -26,8 +26,9 @@ permalink: /misc/
 <br>
 
 * **Teaching**
+
 During my PhD, I have had the privilege to TA a number of classes, including:
-	* *PhD*: Corporate Finance (Doug Diamong & Zhiguo He); Asset Pricing (Stefan Nagel)
+	* *PhD*: Corporate Finance I (Doug Diamond & Zhiguo He); Asset Pricing II (Stefan Nagel)
 	* *MBA*: Portfolio Management (Lubos Pastor); Advanced Investments (Stefan Nagel); Behavioral Finance (Sam Hartzmark)
 	* *Undergrad*: Corporate Finance (Constantine Yannelis)
 

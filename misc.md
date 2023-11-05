@@ -23,6 +23,13 @@ permalink: /misc/
 	* I host my blog on a <a href="https://benmarrow.substack.com">substack</a> 
 	* I wrote some <a href="https://benmarrow.com/pdfs/black_scholes.pdf">notes on solving Black-Scholes</a>
 
+<br>
+
+* **Teaching**
+During my PhD, I have had the privilege to TA a number of classes, including:
+	* *PhD*: Corporate Finance (Doug Diamong & Zhiguo He); Asset Pricing (Stefan Nagel)
+	* *MBA*: Portfolio Management (Lubos Pastor); Advanced Investments (Stefan Nagel); Behavioral Finance (Sam Hartzmark)
+	* *Undergrad*: Corporate Finance (Constantine Yannelis)
 
 	
 

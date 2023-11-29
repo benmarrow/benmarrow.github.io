@@ -12,12 +12,13 @@ permalink: /misc/
 * **Activities**
 	* I am a co-organizer the <a href="https://sites.google.com/view/behavioral-finance-group/">Behavioral Finance Reading Group</a> for Fall 2023
 	* I am actively involved with the <a href="https://www.paideiainstitute.org/">Paideia Institute</a>
+	* I serve on the Booth Standing Committee on PhD Climate, 2023-2024
 
 <br>
 
 * **Software**
 	* I coded up a Twitter bot, <a href="https://www.twitter.com/everyFREDgraph">@EveryFredGraph</a>, that tweets every graph from the <a href="https://fred.stlouisfed.org">Federal Reserve Bank of St. Louis (FRED)</a> data series. [Note: unfortunately this was shut down when Twitter blocked bots and Heroku started charging money to deploy web apps]
-	* I coded up a "free bet" <a href="https://benmarrow.shinyapps.io/free_bet_converter/">converter</a> to convert free bet promotions into risk-free payouts, given transaction costs and margin constraints. (See <a href="https://benmarrow.notion.site/Optimizing-Sports-Bets-1a8c0b37a03846dd8164b055c4a620e5">this post</a> for a high-level overview)
+	* I coded up a "free bet" <a href="https://benmarrow.shinyapps.io/free_bet_converter/">converter</a> to convert free bet promotions into risk-free payouts, given transaction costs and margin constraints. (See <a href="https://benmarrow.notion.site/Optimal-Sports-Betting-Pt-2-Free-Bets-and-Risk-Free-Bets-958c1e0df6f54046959ed0df592a0b7f?pvs=4">this post</a> for a high-level overview)
 
 <br>
 

@@ -10,13 +10,22 @@ Welcome to my blog. This page contains all my blog posts; I also host my blog on
 <!-- <p align="center"><iframe src="https://benmarrow.substack.com/embed" width="400" height="160" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="yes"></iframe></p> -->
 
 
+
+
 ### Posts
 
 
 <p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Who-Owns-the-Market-a74359bd568840f8b93f86864ac27c9e?pvs=4" style="color: #000000; text-decoration: underline;">Who Owns the Market?</a>
+    <span style="float:right;">
+        February 13, 2024
+    </span>
+</p>
+
+<p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Things-I-Learned-January-2024-146e86d3510c4864b3009556add62d9f?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - January 2024</a>
     <span style="float:right;">
-        November 30, 2023
+        Jan 31, 2024
     </span>
 </p>
 

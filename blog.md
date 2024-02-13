@@ -14,6 +14,13 @@ Welcome to my blog. This page contains all my blog posts; I also host my blog on
 
 
 <p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Things-I-Learned-January-2024-146e86d3510c4864b3009556add62d9f?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - January 2024</a>
+    <span style="float:right;">
+        November 30, 2023
+    </span>
+</p>
+
+<p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Things-I-Learned-November-2023-aeac1e4d819e47e694a82a1c13038551?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - November 2023</a>
     <span style="float:right;">
         November 30, 2023

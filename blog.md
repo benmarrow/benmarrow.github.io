@@ -38,12 +38,12 @@ Welcome to my blog. This page contains all my blog posts; I also host my blog on
 
 
 
-<p style="text-align:left;">
+<!-- <p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Optimal-Sports-Betting-Pt-2-Free-Bets-and-Risk-Free-Bets-958c1e0df6f54046959ed0df592a0b7f?pvs=4" style="color: #000000; text-decoration: underline;">Optimal Sports Betting Pt. 2: Free Bets and Risk-Free Bets</a>
     <span style="float:right;">
         November 24, 2023
     </span>
-</p>
+</p> -->
 
 
 <p style="text-align:left;">
@@ -121,12 +121,12 @@ Welcome to my blog. This page contains all my blog posts; I also host my blog on
     </span>
 </p>
 
-<p style="text-align:left;">
+<!-- <p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Optimizing-Sports-Bets-1a8c0b37a03846dd8164b055c4a620e5" style="color: #000000; text-decoration: underline;">Optimal Sports Betting</a>
     <span style="float:right;">
         March 7, 2022
     </span>
-</p>
+</p> -->
 
 <p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Stock-Returns-and-the-Wisdom-of-Crowds-8ae52de24fc24617ab6cd6a1af14db80" style="color: #000000; text-decoration: underline;">Stock Returns and the Wisdom of Crowds</a>

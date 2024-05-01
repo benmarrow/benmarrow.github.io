@@ -13,6 +13,7 @@ permalink: /misc/
 	* I am a co-organizer the <a href="https://sites.google.com/view/behavioral-finance-group/">Behavioral Finance Reading Group</a> for Fall 2023
 	* I am actively involved with the <a href="https://www.paideiainstitute.org/">Paideia Institute</a>
 	* I serve on the Booth Standing Committee on PhD Climate, 2023-2024
+	* I play for the UChicago Intercollegiate Chess Team
 
 <br>
 
@@ -23,8 +24,9 @@ permalink: /misc/
 <br>
 
 * **Writing**
-	* I host my blog on a <a href="https://benmarrow.substack.com">substack</a> 
-	* I wrote some <a href="https://benmarrow.com/pdfs/black_scholes.pdf">notes on solving Black-Scholes</a>
+	* I host my personal blog, *Blog-Normal*, on a <a href="https://benmarrow.substack.com">substack</a>
+	* I coauthor a <a href="https://bkad.substack.com">newsletter</a>, *Better Know a Dataset*, with <a href="https://sangmino.github.io/">Simon Oh</a>.
+	* I wrote some <a href="https://benmarrow.com/pdfs/black_scholes.pdf">notes</a> on solving Black-Scholes
 
 <br>
 

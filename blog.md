@@ -21,8 +21,6 @@ Welcome to my blog. This page contains all my blog posts; I also host my blog on
         February 13, 2024
     </span>
 </p>
-
-
 <p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Optimal-Sports-Betting-Pt-2-Free-Bets-and-Risk-Free-Bets-958c1e0df6f54046959ed0df592a0b7f?pvs=4" style="color: #000000; text-decoration: underline;">Optimal Sports Betting Pt. 2: Free Bets and Risk-Free Bets</a>
     <span style="float:right;">

@@ -12,29 +12,7 @@ Welcome to my blog. This page contains all my blog posts; I also host my blog on
 
 
 
-### Posts
-
-
-<p style="text-align:left;">
-    <a href = "https://benmarrow.notion.site/Things-I-Learned-April-2024-2051bad3682641ec9a18a38344565972?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - April 2024</a>
-    <span style="float:right;">
-        April 30, 2024
-    </span>
-</p>
-
-<p style="text-align:left;">
-    <a href = "https://benmarrow.notion.site/Things-I-Learned-March-2024-461d52f29f1f42f6af3dd3748a4b0684?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - March 2024</a>
-    <span style="float:right;">
-        March 31, 2024
-    </span>
-</p>
-
-<p style="text-align:left;">
-    <a href = "https://benmarrow.notion.site/Things-I-Learned-February-2024-5cc44c0c81df4f03abdbfe8cb24bbf1d?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - February 2024</a>
-    <span style="float:right;">
-        February 29, 2024
-    </span>
-</p>
+### Regular Posts
 
 
 <p style="text-align:left;">
@@ -44,43 +22,15 @@ Welcome to my blog. This page contains all my blog posts; I also host my blog on
     </span>
 </p>
 
-<p style="text-align:left;">
-    <a href = "https://benmarrow.notion.site/Things-I-Learned-January-2024-146e86d3510c4864b3009556add62d9f?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - January 2024</a>
-    <span style="float:right;">
-        Jan 31, 2024
-    </span>
-</p>
 
 <p style="text-align:left;">
-    <a href = "https://benmarrow.notion.site/Things-I-Learned-November-2023-aeac1e4d819e47e694a82a1c13038551?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - November 2023</a>
-    <span style="float:right;">
-        November 30, 2023
-    </span>
-</p>
-
-
-
-<!-- <p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Optimal-Sports-Betting-Pt-2-Free-Bets-and-Risk-Free-Bets-958c1e0df6f54046959ed0df592a0b7f?pvs=4" style="color: #000000; text-decoration: underline;">Optimal Sports Betting Pt. 2: Free Bets and Risk-Free Bets</a>
     <span style="float:right;">
         November 24, 2023
     </span>
-</p> -->
-
-
-<p style="text-align:left;">
-    <a href = "https://benmarrow.notion.site/Things-I-Learned-October-2023-9a805830df4e4fa88054011896599d58?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - October 2023</a>
-    <span style="float:right;">
-        October 31, 2023
-    </span>
 </p>
 
-<p style="text-align:left;">
-    <a href = "https://benmarrow.notion.site/Things-I-Learned-September-2023-2fd66c1b87b44c81a3ad1f9551b05c05?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - September 2023</a>
-    <span style="float:right;">
-        September 30, 2023
-    </span>
-</p>
+
 
 <p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Some-Use-Cases-of-ChatGPT-964660386c5046fbbd7ed7b687acf67f?pvs=4" style="color: #000000; text-decoration: underline;">Some Use-Cases of ChatGPT</a>
@@ -89,20 +39,7 @@ Welcome to my blog. This page contains all my blog posts; I also host my blog on
     </span>
 </p>
 
-<p style="text-align:left;">
-    <a href = "https://benmarrow.notion.site/Things-I-Learned-August-2023-e09731a6aae94cddafdc1e3b239da6b7?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - August 2023</a>
-    <span style="float:right;">
-        August 31, 2023
-    </span>
-</p>
 
-
-<p style="text-align:left;">
-    <a href = "https://benmarrow.notion.site/Things-I-Learned-July-2023-bc13ccdb312342db9f74cd78cead1f18?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - July 2023</a>
-    <span style="float:right;">
-        July 31, 2023
-    </span>
-</p>
 
 
 <p style="text-align:left;">
@@ -143,12 +80,12 @@ Welcome to my blog. This page contains all my blog posts; I also host my blog on
     </span>
 </p>
 
-<!-- <p style="text-align:left;">
+<p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Optimizing-Sports-Bets-1a8c0b37a03846dd8164b055c4a620e5" style="color: #000000; text-decoration: underline;">Optimal Sports Betting</a>
     <span style="float:right;">
         March 7, 2022
     </span>
-</p> -->
+</p>
 
 <p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Stock-Returns-and-the-Wisdom-of-Crowds-8ae52de24fc24617ab6cd6a1af14db80" style="color: #000000; text-decoration: underline;">Stock Returns and the Wisdom of Crowds</a>
@@ -241,5 +178,69 @@ Welcome to my blog. This page contains all my blog posts; I also host my blog on
     </span>
 </p>
 
+### "Things I Learned" Posts
 
+<p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Things-I-Learned-April-2024-2051bad3682641ec9a18a38344565972?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - April 2024</a>
+    <span style="float:right;">
+        April 30, 2024
+    </span>
+</p>
+
+<p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Things-I-Learned-March-2024-461d52f29f1f42f6af3dd3748a4b0684?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - March 2024</a>
+    <span style="float:right;">
+        March 31, 2024
+    </span>
+</p>
+
+<p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Things-I-Learned-February-2024-5cc44c0c81df4f03abdbfe8cb24bbf1d?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - February 2024</a>
+    <span style="float:right;">
+        February 29, 2024
+    </span>
+</p>
+
+<p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Things-I-Learned-January-2024-146e86d3510c4864b3009556add62d9f?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - January 2024</a>
+    <span style="float:right;">
+        Jan 31, 2024
+    </span>
+</p>
+
+<p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Things-I-Learned-November-2023-aeac1e4d819e47e694a82a1c13038551?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - November 2023</a>
+    <span style="float:right;">
+        November 30, 2023
+    </span>
+</p>
+
+<p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Things-I-Learned-October-2023-9a805830df4e4fa88054011896599d58?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - October 2023</a>
+    <span style="float:right;">
+        October 31, 2023
+    </span>
+</p>
+
+<p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Things-I-Learned-September-2023-2fd66c1b87b44c81a3ad1f9551b05c05?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - September 2023</a>
+    <span style="float:right;">
+        September 30, 2023
+    </span>
+</p>
+
+<p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Things-I-Learned-August-2023-e09731a6aae94cddafdc1e3b239da6b7?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - August 2023</a>
+    <span style="float:right;">
+        August 31, 2023
+    </span>
+</p>
+
+
+<p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Things-I-Learned-July-2023-bc13ccdb312342db9f74cd78cead1f18?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - July 2023</a>
+    <span style="float:right;">
+        July 31, 2023
+    </span>
+</p>
 

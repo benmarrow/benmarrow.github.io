@@ -179,6 +179,21 @@ Welcome to my blog. This page contains all my blog posts; I also host my blog on
 ### "Things I Learned" Posts
 
 <p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Things-I-Learned-June-2024-5f9336c2f5d94768843c873be8fcc526?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - June 2024</a>
+    <span style="float:right;">
+        June 30, 2024
+    </span>
+</p>
+
+<p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Things-I-Learned-May-2024-d5a59ceeb6894452bc117fd503758c6a?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - May 2024</a>
+    <span style="float:right;">
+        May 31, 2024
+    </span>
+</p>
+
+
+<p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Things-I-Learned-April-2024-2051bad3682641ec9a18a38344565972?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - April 2024</a>
     <span style="float:right;">
         April 30, 2024

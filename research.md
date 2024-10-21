@@ -39,14 +39,7 @@ permalink: /research/
 
 <span style="color:gray; font-size:70%;">In frictionless markets, interest rates across various loan products should not differ within borrower, at the same point in time. This paper documents the existence of persistent, loan-level discounts to firms, identified as the difference between spreads on institutional investor-held loans and loans held by banks. Within a loan package -- loans offered to the same firm at the same time -- institutional term loans command a spread 64 basis points above revolving loans and 61 basis points above term loans. We show the discounts are not driven solely by loan characteristics, bid ask spreads, or upward sloping supply curves. Instead we use our measure to test theories of banking relationships and loan pricing. Discounts are higher when no previous banking relationship exists with the borrowing firm, and public borrowers receive higher initial discounts and have steeper declines in the discount over the course of the banking relationship, relative to private borrowers. We propose and provide evidence for a cross-selling model of the pricing of banking services, where banks price services with the impacts on other lines of business in mind. We show that initial discounts are highest to public firms, consistent with greater competition for firms with high likelihood of other banking service needs, and that having previous banking relationships are associated with a greater likelihood of future hiring for all types of banking services.</span>
 
-<p style="text-align:left;">
-<span style="text-decoration: underline">Retail, Institutions, and News-Driven Trading</span>
-    <span style="float:right;">
-        August, 2021
-    </span><br>
-</p>
 
-<span style="color:gray; font-size:70%;">How do different classes of investors respond to, and trade around, various stock-related news? This paper looks at earnings and monetary policy surprises, and the associated return response based on this behavior. Stocks with high retail ownership exhibit stronger responses to positive earnings surprises and weaker responses to positive monetary policy shocks, relative to stocks with high institutional owner- ship. Retail traders trade actively around earnings announcements – as net purchasers of stocks that subsequently report low-earnings – but not around monetary policy announcements. These results are consistent with behavior in which overconfident retail investors pay closer attention to firm-specific news and where institutions purchase positive news from retail.</span>
 
 
 

@@ -14,6 +14,14 @@ Welcome to my blog. This page contains all my blog posts; I also host my blog on
 
 ### Regular Posts
 
+<p style="text-align:left;">
+    <a href = "https://bkad.substack.com/p/where-have-all-the-yalies-gone/" style="color: #000000; text-decoration: underline;">Where Have All the Yalies Gone?</a>
+    <span style="float:right;">
+        September 27, 2024
+    </span>
+</p>
+
+
 
 <p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Who-Owns-the-Market-a74359bd568840f8b93f86864ac27c9e?pvs=4" style="color: #000000; text-decoration: underline;">Who Owns the Market?</a>

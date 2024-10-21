@@ -1,18 +1,18 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /misc/
 ---
 
 
 
 
  <div style="display: flex; align-items: center; gap: 20px;">
-  <img src="/pdfs/Ben-060_cropped2.jpg" alt="Profile Picture" width="300"/>
+  <img src="/pdfs/Ben-060_cropped.jpg" alt="Profile Picture" width="300"/>
 
   <div>
     <p>
-      I am a PhD candidate in the <a href="http://financialeconomics.uchicago.edu">Joint Program in Finance & Economics</a> between the University of Chicago and the Booth School of Business. 
+      I am a PhD Candidate in the <a href="http://financialeconomics.uchicago.edu">Joint Program in Finance & Economics</a> between the University of Chicago and the Booth School of Business. 
       My research interests span empirical asset pricing, behavioral and institutional finance, and household finance.
     </p>
     <p>

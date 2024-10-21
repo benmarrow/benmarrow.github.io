@@ -17,6 +17,18 @@ permalink: /research/
 
 
 <p style="text-align:left;">
+    <a href = "https://benmarrow.com/pdfs/PastReturnPred.pdf
+" style="color: #000000; text-decoration: underline;">Real-Time Discovery and Tracking of Return-Based Anomalies
+</a>
+    <span style="float:right;">
+        October 2024
+    </span> <br>
+    (with <a href = "https://voices.uchicago.edu/stefannagel" style = "color: #000080;">Stefan Nagel</a>)
+</p>
+<span style="color:gray; font-size:70%;">We explore the cross-sectional predictability of stock returns with lagged past returns through the lens of a hypothetical Bayesian researcher who begins with an initial prior that is neutral, showing no bias toward momentum, reversal, or other predictable patterns. This researcher considers a wide range of monthly lags as potential return predictors. By applying Gaussian process regression, which flexibly allows expected returns to depend on lagged returns, and using empirical Bayes shrinkage to guard against spurious anomaly discovery due to multiple testing and against mistaking the ex-post visible effects of investor learning as ex-ante expected returns, this researcher would have discovered prominent return-based anomalies—such as momentum and long-term reversal—well before the authors of the published studies analyzed the data. This suggests that these anomalies represented properties of ex-ante expected returns at the time of their academic discovery. However, tracking these anomalies in real-time, with posterior beliefs based on optimally weighted historical data, reveals that the ex-ante expected returns of many prominent anomalies diminish significantly around their publication dates. Based on these findings, there is little justification for viewing momentum, long-term reversal effects, or other return-based anomalies as permanent features of the cross-section of expected stock returns.</span>
+
+
+<p style="text-align:left;">
     <a href = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4154564
 " style="color: #000000; text-decoration: underline;">Inflation Expectations and Stock Returns
 </a>

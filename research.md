@@ -6,11 +6,12 @@ permalink: /research/
 
 
 <p style="text-align:left;">
-   The Pricing of Earnings News
+<span style="text-decoration: underline">The Pricing of Earnings News</span>
     <span style="float:right;">
         October, 2024
-    </span> <br>
+    </span><br>
 </p>
+
 
 <span style="color:gray; font-size:70%;">How does earnings news get priced into stock returns? I use a demand-system approach to show that this passthrough depends on investor responses to both earnings and prices and that these sensitivities are heterogeneous in the cross-section of investors. A key challenge in identifying these sensitivities is that earnings news is rapidly incorporated into prices; as a result, it is difficult to distinguish whether investors react to the earnings news itself or the concurrent price change. I introduce a two-step procedure based on market-clearing logic to identify earnings elasticities in the presence of this price contamination: by adjusting each investor's general equilibrium response to earnings news for the counterfactual price response. The estimated demand system indicates that the asset-weighted earnings elasticity averages around 3, i.e. for a stock that beats earnings expectations by 1%, the average investor would increase the number of shares he holds by 3% if prices were held fixed. However, these estimates vary significantly across sectors: institutional investors show high sensitivity to earnings news and small responses to prices, while the residual "household" sector displays the opposite behavior. Stock-level measures of earnings and price sensitivity, derived from averaging investor-level elasticities within-stock, explain earnings-related asset pricing patterns. First, stock-level elasticities can account for heterogeneous earnings passthrough, as stocks with higher earnings sensitivity or lower price sensitivity see stronger return responses from the same earnings surprise. Second, extremes of price and earnings elasticities are closely related to over- and under-reaction: a strategy that bets on subsequent reversal (momentum) in sensitive (insensitive) stocks in response to earnings news generates significant outperformance and alpha. These findings suggest that the pricing of earnings news is closely related to the ownership structure of stocks.</span>
 

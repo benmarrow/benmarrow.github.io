@@ -6,14 +6,15 @@ permalink: /research/
 
 
 <p style="text-align:left;">
-<span style="text-decoration: underline">The Pricing of Earnings News (JMP)</span>
+    <a href = "https://benmarrow.com/pdfs/JMP_Draft.pdf
+" style="color: #000000; text-decoration: underline;">The Pricing of Earnings News (JMP)
+</a>
     <span style="float:right;">
-        October, 2024
-    </span><br>
+        October 2024
+    </span> 
 </p>
 
-
-<span style="color:gray; font-size:70%;">How does earnings news get priced into stock returns? I use a demand system approach to show that this passthrough depends on investor responses to both earnings and prices and that these sensitivities are heterogeneous across investors. A key identification challenge is that earnings news is rapidly incorporated into prices; as a result, it is difficult to distinguish whether investors react to the earnings news itself or the concurrent price change. Using a two-step procedure to isolate price from earnings responses, I identify an average asset-weighted earnings elasticity of 3, i.e. for a stock that beats earnings expectations by 1%, the average investor would increase the shares he holds by 3% if prices were held fixed. These estimates vary across sectors, with most institutional investors more earnings elastic and price inelastic compared to the residual (“household”) sector. The stock-level sensitivities implied by their ownership account for heterogeneous earnings passthroughs, as stocks with higher earnings sensitivity and lower price sensitivity see larger return responses from the same earnings surprise. Extremes of price and earnings elasticities are also closely related to misreaction: a strategy that bets on subsequent reversal (momentum) in sensitive (insensitive) stocks in response to earnings news generates significant outperformance and alpha. These findings suggest that the pricing of earnings news is closely related to the ownership structure of stocks.</span>
+<span style="color:gray; font-size:70%;">How does earnings news get priced into stock returns? I use a demand system approach to show that this passthrough depends on investor responses to both earnings and prices and that these sensitivities are heterogeneous across investors. A key identification challenge is that earnings news is rapidly incorporated into prices; as a result, it is difficult to distinguish whether investors react to the earnings news itself or the concurrent price change. Using a two-step procedure to isolate price from earnings responses, I identify an average asset-weighted earnings elasticity of 3, i.e. for a stock that beats earnings expectations by 1%, the average investor would increase his number of shares held by 3% if prices were held fixed. These estimates vary across sectors, with most institutional investors more earnings elastic and price inelastic compared to the residual (“household”) sector. The stock-level sensitivities implied by their ownership account for heterogeneous earnings passthroughs, as stocks with higher earnings sensitivity and lower price sensitivity see larger return responses from the same earnings surprise. Extremes of price and earnings elasticities are also closely related to misreaction: a strategy that bets on subsequent reversal (momentum) in sensitive (insensitive) stocks in response to earnings news generates significant outperformance and alpha. These findings suggest that the pricing of earnings news is closely related to the ownership structure of stocks.</span>
 
 
 <p style="text-align:left;">

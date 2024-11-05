@@ -187,6 +187,27 @@ Welcome to my blog. This page contains all my blog posts; I also host my blog on
 ### "Things I Learned" Posts
 
 <p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Things-I-Learned-October-2024-11475b5142e38044aa07db63b0f15cdb?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - October 2024</a>
+    <span style="float:right;">
+        October 31, 2024
+    </span>
+</p>
+
+<p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Things-I-Learned-August-2024-dc518b3786394f629b9a75ee101dec87?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - August 2024</a>
+    <span style="float:right;">
+        August 31, 2024
+    </span>
+</p>
+
+<p style="text-align:left;">
+    <a href = "https://benmarrow.notion.site/Things-I-Learned-July-2024-65ba6b9a2e4f4a62a43a6535bc163c27?pvs=73" style="color: #000000; text-decoration: underline;">Things I Learned - July 2024</a>
+    <span style="float:right;">
+        July 31, 2024
+    </span>
+</p>
+
+<p style="text-align:left;">
     <a href = "https://benmarrow.notion.site/Things-I-Learned-June-2024-5f9336c2f5d94768843c873be8fcc526?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - June 2024</a>
     <span style="float:right;">
         June 30, 2024

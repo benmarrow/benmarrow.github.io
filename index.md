@@ -15,7 +15,7 @@ layout: home
     </p>
     
     <p>
-      I received my BA from Yale in 2017 in Ethics, Politics, & Economics.
+      I received my BA from Yale in 2017 in Ethics, Politics, & Economics. My CV can be found <a href="http://benmarrow.com/pdfs/cv.pdf">here</a>.
     </p>
     
     

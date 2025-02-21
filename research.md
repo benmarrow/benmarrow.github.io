@@ -6,7 +6,7 @@ permalink: /research/
 
 
 <p style="text-align:left;">
-    <a href = "https://benmarrow.com/pdfs/JMP_draft.pdf" style="color: #000000; text-decoration: underline;">The Pricing of Earnings News (JMP)
+    <a href = "https://benmarrow.com/pdfs/JMP_draft.pdf" style="color: #000000; text-decoration: underline;">The Pricing of Earnings News 
 </a>
     <span style="float:right;">
         October 2024

@@ -20,6 +20,7 @@ permalink: /misc/
 * **Software**
 	* I coded up a Twitter bot, <a href="https://www.twitter.com/everyFREDgraph">@EveryFredGraph</a>, that tweets every graph from the <a href="https://fred.stlouisfed.org">Federal Reserve Bank of St. Louis (FRED)</a> data series. [Note: unfortunately this was shut down when Twitter blocked bots and Heroku started charging money to deploy web apps]
 	* I coded up a "free bet" <a href="https://benmarrow.shinyapps.io/free_bet_converter/">converter</a> to convert free bet promotions into risk-free payouts, given transaction costs and margin constraints. (See <a href="https://benmarrow.notion.site/Optimal-Sports-Betting-Pt-2-Free-Bets-and-Risk-Free-Bets-958c1e0df6f54046959ed0df592a0b7f?pvs=4">this post</a> for a high-level overview)
+	* I coded up an interactive <a href="https://benmarrow.shinyapps.io/career_wins/">plot</a> for visualizing the career trajectories (peak, longevity) of various ATP men's tennis players.
 
 <br>
 

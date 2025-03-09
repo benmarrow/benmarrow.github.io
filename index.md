@@ -12,7 +12,7 @@ layout: home
     </p>
 
     <p>
-      My interests include sports statistics, writing, and board games. I worked as a Quantitative Analysis Associate for the <a href="https://www.mlb.com/yankees">New York Yankees</a>, conducting sports analytics (sabermetrics) for the front office, and as a Quantitative Sports Researcher for <a href = "https://www.aqr.com/">AQR Capital Management</a>, conducting research on sports betting strategies. Some of my blogging can be found <a href="https://benmarrow.substack.com/">here</a> and <a href="https://bkad.substack.com/">here</a>. I have played for the Yale and University Chicago chess teams, and was formerly a competitive Scrabble player.
+      My interests include sports statistics, writing, and board games. I worked as a Quantitative Analysis Associate for the <a href="https://www.mlb.com/yankees">New York Yankees</a>, conducting sports analytics (sabermetrics) for the front office, and as a Quantitative Sports Researcher for <a href = "https://www.aqr.com/">AQR Capital Management</a>, conducting research on sports betting strategies. Some of my blogging can be found <a href="https://benmarrow.substack.com/">here</a> and <a href="https://bkad.substack.com/">here</a>. I have played for the Yale and University of Chicago chess teams, and was formerly a competitive Scrabble player.
     </p>
 
     

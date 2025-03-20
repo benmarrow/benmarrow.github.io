@@ -16,8 +16,8 @@ layout: home
     <u>Sports statistics:</u> I worked as a Quantitative Analysis Associate for the 
     <a href="https://www.mlb.com/yankees">New York Yankees</a>, conducting sports analytics 
     (sabermetrics) for the front office, and as a Quantitative Sports Researcher for 
-    <a href="https://www.aqr.com/">AQR Capital Management</a>, conducting research on 
-    sports betting strategies.
+    <a href="https://www.aqr.com/">AQR Capital Management</a>, focused on 
+    sports betting.
   </li>
   <li>
     <u>Writing:</u> I cover topics on finance and markets for <a href = "https://www.economist.com/finance-and-economics"><i>The Economist</i></a>. Some of my personal blogging can be found 

@@ -22,8 +22,7 @@ layout: home
     sports betting strategies.
   </li>
   <li>
-    <u>Writing:</u> I cover topics on finance and markets for The Economist. Additionally, 
-    some of my personal blogging can be found 
+    <u>Writing:</u> I cover topics on finance and markets for <a href = "https://www.economist.com/finance-and-economics"><i> Economist</i></a>. Some of my personal blogging can be found 
     <a href="https://benmarrow.substack.com/">here</a> and 
     <a href="https://bkad.substack.com/">here</a>.
   </li>

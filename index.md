@@ -15,20 +15,20 @@ layout: home
 
 <ul>
   <li>
-    <b>Sports statistics:</b> I worked as a Quantitative Analysis Associate for the 
+    <u>Sports statistics:</u> I worked as a Quantitative Analysis Associate for the 
     <a href="https://www.mlb.com/yankees">New York Yankees</a>, conducting sports analytics 
     (sabermetrics) for the front office, and as a Quantitative Sports Researcher for 
     <a href="https://www.aqr.com/">AQR Capital Management</a>, conducting research on 
     sports betting strategies.
   </li>
   <li>
-    <b>Writing:</b> I cover topics on finance and markets for The Economist. Additionally, 
+    <u>Writing:</u> I cover topics on finance and markets for The Economist. Additionally, 
     some of my personal blogging can be found 
     <a href="https://benmarrow.substack.com/">here</a> and 
     <a href="https://bkad.substack.com/">here</a>.
   </li>
   <li>
-    <b>Board games:</b> I have played for the Yale and University of Chicago chess teams, 
+    <u>Board games:</u> I have played for the Yale and University of Chicago chess teams, 
     and was formerly a competitive Scrabble player.
   </li>
 </ul>

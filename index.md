@@ -11,7 +11,7 @@ layout: home
       My research interests span empirical asset pricing, behavioral and institutional finance, and household finance.   Previously, I worked as a Senior Research Analyst in the Capital Markets Group of the <a href="https://www.newyorkfed.org/research">Federal Reserve Bank of New York</a>. Beyond finance, some of my interests include:
     </p>
 
-<ul>
+<<!-- ul>
   <li>
     <u>Sports statistics:</u> I worked as a Quantitative Analysis Associate for the 
     <a href="https://www.mlb.com/yankees">New York Yankees</a>, conducting sports analytics 
@@ -28,7 +28,7 @@ layout: home
     <u>Board games:</u> I have played for the Yale and University of Chicago chess teams, 
     and was formerly a competitive Scrabble player.
   </li>
-</ul>
+</ul> -->
     
     <p>
       I received my B.A. from Yale in 2017 in Ethics, Politics, & Economics. 
@@ -36,7 +36,7 @@ layout: home
     </p>
     
 
-    <p><b>Update (April 2025):</b> successfully defended my dissertation!</p>
+    <!-- <p><b>Update (April 2025):</b> successfully defended my dissertation!</p> -->
     
   </div>
 </div>

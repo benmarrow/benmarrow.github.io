@@ -8,7 +8,9 @@ layout: home
   <div>
     <p>
       I am a PhD in the <a href="http://financialeconomics.uchicago.edu">Joint Program in Financial Economics</a> between the <a href = "https://economics.uchicago.edu/">University of Chicago</a> and the <a href = "https://www.chicagobooth.edu/phd">Booth School of Business</a>. 
-      My research interests span empirical asset pricing, behavioral and institutional finance, and household finance.   Previously, I worked as a Senior Research Analyst in the Capital Markets Group of the <a href="https://www.newyorkfed.org/research">Federal Reserve Bank of New York</a>. Beyond finance, some of my interests include:
+      My research interests span empirical asset pricing, behavioral and institutional finance, and household finance.   Previously, I worked as a Senior Research Analyst in the Capital Markets Group of the <a href="https://www.newyorkfed.org/research">Federal Reserve Bank of New York</a>. 
+
+      <!-- Beyond finance, some of my interests include: -->
     </p>
 
 <!-- ul>

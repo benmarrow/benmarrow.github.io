@@ -11,7 +11,7 @@ layout: home
       My research interests span empirical asset pricing, behavioral and institutional finance, and household finance.   Previously, I worked as a Senior Research Analyst in the Capital Markets Group of the <a href="https://www.newyorkfed.org/research">Federal Reserve Bank of New York</a>. Beyond finance, some of my interests include:
     </p>
 
-<<!-- ul>
+<!-- ul>
   <li>
     <u>Sports statistics:</u> I worked as a Quantitative Analysis Associate for the 
     <a href="https://www.mlb.com/yankees">New York Yankees</a>, conducting sports analytics 

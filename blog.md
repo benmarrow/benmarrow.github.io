@@ -192,7 +192,7 @@ Welcome to my blog. This page contains all my blog posts; I also host my blog on
 
 
 <p style="text-align:left;">
-    <a href = "https://benmarrow.notion.site/Things-I-Learned-April-2025-1c975b5142e380de935ef9b4124ef028?pvs=4 style="color: #000000; text-decoration: underline;">Things I Learned - April 2025</a>
+    <a href = "https://benmarrow.notion.site/Things-I-Learned-April-2025-1c975b5142e380de935ef9b4124ef028?pvs=4" style="color: #000000; text-decoration: underline;">Things I Learned - April 2025</a>
     <span style="float:right;">
         April 30, 2025
     </span>

@@ -1,11 +1,5 @@
 ---
 layout: page
-title: About
-permalink: /
 ---
 
-
-
-
-
-
+<!-- Temporarily blank -->

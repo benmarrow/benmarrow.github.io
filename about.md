@@ -26,7 +26,9 @@ My professional interests include:
 
 <p>
 
-I received a B.A. (from Yale) in 2017 in Ethics, Politics, & Economics; an MBA (from Booth) in 2025; and PhD (from U. Chicago & Booth) in 2025.
+I received my B.A. (from Yale) in 2017 in Ethics, Politics, & Economics; my MBA (from Booth) in 2025; and my PhD (from U. Chicago & Booth) in 2025.
+
+
 
 
 

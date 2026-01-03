@@ -61,6 +61,8 @@ Welcome to my blog. This page contains all my blog posts; I also host my blog on
 
 </details>
 
+<br>
+
 <details>
 <summary><h3 style="display: inline;">"Things I Learned" Posts</h3></summary>
 

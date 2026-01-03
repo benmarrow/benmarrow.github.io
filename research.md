@@ -35,8 +35,7 @@ permalink: /research/
         July, 2022
     </span> <br>
     (with <a href = "https://www.mchaudhary.com/" style = "color: #000080;">Manav Chaudhary</a>)
-<span style="text-decoration: italic; font-size:70%;">AQR Asset Management Institute Prize</span><br>
-<span style="text-decoration: italic; font-size:70%;">Yiran Fan Memorial Fellowship (Best 3rd Year Paper in Finance)</span><br>
+<span style="text-decoration: italic; font-size:70%;">AQR Asset Management Institute Prize; Yiran Fan Memorial Fellowship (Best 3rd Year Paper in Finance)</span><br>
 </p>
 </li>
 

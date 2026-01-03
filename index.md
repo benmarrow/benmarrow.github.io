@@ -1,7 +1,5 @@
 ---
-layout: page
-title: Home
-permalink: /
+layout: home
 ---
 
 <img src="/pdfs/Ben-060_cropped.jpg" alt="Profile Picture" width="300"/>

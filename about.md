@@ -6,12 +6,12 @@ permalink: /about/
 
 <p>
   Welcome to my website. 
-
 <ul>
   <li>
     <u>Economics:</u>  I completed my PhD in  
-      My research interests span empirical asset pricing, behavioral and institutional finance, and household finance.  Previously, I worked for the <a href="https://www.newyorkfed.org/research">Federal Reserve Bank of New York</a>. 
-    <u>Sports statistics:</u>I worked as a Quantitative Analysis Associate for the 
+      My research interests span empirical asset pricing, behavioral and institutional finance, and household finance.  Previously, I worked for the <a href="https://www.newyorkfed.org/research">Federal Reserve Bank of New York</a> .
+  </li>
+  <li><u>Sports statistics:</u>I worked as a Quantitative Analysis Associate for the 
     <a href="https://www.mlb.com/yankees">New York Yankees</a>, conducting sports analytics 
     (sabermetrics) for the front office, and as a Quantitative Sports Researcher for 
     <a href="https://www.aqr.com/">AQR Capital Management</a>.

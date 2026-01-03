@@ -7,7 +7,9 @@ layout: home
   <div>
     Welcome to my website.
     <br>
+    <br>
     I primarily communicate with the world through my blog, which you read/subscribe to <a href="https://benmarrow.substack.com">here</a>.
+    <br>
     <br>
     You can read more about my background <a href="/about/">here</a>.
   </div>
